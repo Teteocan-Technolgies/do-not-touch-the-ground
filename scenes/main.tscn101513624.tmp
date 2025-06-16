@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://dw6oxktjpdamk"]
+
+[ext_resource type="PackedScene" uid="uid://c4imfugleu4s4" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://ct4tfsks4qm55" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dmik40lmv7qgm" path="res://scenes/meteorito.tscn" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://bfc7clxxdcov2" path="res://scripts/floor.gd" id="4_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://cngfj0nqb1i00" path="res://assets/floor.png" id="5_tefeu"]
+[ext_resource type="PackedScene" uid="uid://bjw1qsh8caqh1" path="res://scenes/hud.tscn" id="6_tefeu"]
+[ext_resource type="AudioStream" uid="uid://b6q6vy3ijfxu6" path="res://assets/Audio/Background_music.ogg" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://cdl1ewi6j2hi3" path="res://assets/Backgrounds/BACKGROUND.jpg" id="8_tipki"]
+
+[sub_resource type="Curve2D" id="Curve2D_tbgi4"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0)
+}
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
+size = Vector2(534, 197)
+
+[node name="Main" type="Node"]
+process_mode = 1
+script = ExtResource("1_sugp2")
+meteorito_scene = ExtResource("2_jyhfs")
+
+[node name="Player" parent="." instance=ExtResource("1_o5qli")]
+
+[node name="MeteoritoTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(240, 376)
+
+[node name="MeteoritoPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_tbgi4")
+
+[node name="MeteoritoSpawnLocation" type="PathFollow2D" parent="MeteoritoPath"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+script = ExtResource("4_tbgi4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(216, 612.5)
+shape = SubResource("RectangleShape2D_o6xl0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+position = Vector2(215.5, 594)
+scale = Vector2(0.391912, 0.39523)
+texture = ExtResource("5_tefeu")
+
+[node name="HUD" parent="." instance=ExtResource("6_tefeu")]
+process_mode = 3
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_o6xl0")
+autoplay = true
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+offset_left = -70.0
+offset_top = -20.0
+offset_right = 530.0
+offset_bottom = 838.0
+texture = ExtResource("8_tipki")
+
+[connection signal="hit" from="Player" to="." method="game_over"]
+[connection signal="timeout" from="MeteoritoTimer" to="." method="_on_meteorito_timer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

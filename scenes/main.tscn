@@ -1,0 +1,113 @@
+[gd_scene load_steps=17 format=3 uid="uid://dw6oxktjpdamk"]
+
+[ext_resource type="PackedScene" uid="uid://c4imfugleu4s4" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://ct4tfsks4qm55" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dmik40lmv7qgm" path="res://scenes/meteorito.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://yllrrtko40wd" path="res://scenes/bird.tscn" id="3_85g3d"]
+[ext_resource type="PackedScene" uid="uid://2um1u2p4pdtu" path="res://scenes/Tcollaboration.tscn" id="4_choun"]
+[ext_resource type="Script" uid="uid://bfc7clxxdcov2" path="res://scripts/floor.gd" id="4_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bjw1qsh8caqh1" path="res://scenes/hud.tscn" id="6_tefeu"]
+[ext_resource type="Texture2D" uid="uid://bjlg72yyp1dht" path="res://assets/Backgrounds/Suelo-02-02.png" id="7_choun"]
+[ext_resource type="AudioStream" uid="uid://b6q6vy3ijfxu6" path="res://assets/Audio/Background_music.ogg" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://dlqar57cv0166" path="res://assets/Backgrounds/BACKGROUND.png" id="9_85g3d"]
+[ext_resource type="AudioStream" uid="uid://bgn54y83gmktd" path="res://assets/Home Screen/Audio/globo_tap_3.mp3" id="11_eb6dy"]
+[ext_resource type="AudioStream" uid="uid://60wpbsgx7q1q" path="res://assets/Home Screen/Audio/globo_explosion.mp3" id="11_ya4ey"]
+
+[sub_resource type="Curve2D" id="Curve2D_tbgi4"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0)
+}
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
+size = Vector2(534, 197)
+
+[sub_resource type="Curve2D" id="Curve2D_tipki"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 408, 0, 0, 0, 0, 0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_85g3d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 480, 408)
+}
+point_count = 2
+
+[node name="Main" type="Node"]
+process_mode = 1
+script = ExtResource("1_sugp2")
+meteorito_scene = ExtResource("2_jyhfs")
+bird_scene = ExtResource("3_85g3d")
+Tcollaboration_scene = ExtResource("4_choun")
+
+[node name="Player" parent="." instance=ExtResource("1_o5qli")]
+
+[node name="MeteoritoTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(240, 376)
+
+[node name="MeteoritoPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_tbgi4")
+
+[node name="MeteoritoSpawnLocation" type="PathFollow2D" parent="MeteoritoPath"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+script = ExtResource("4_tbgi4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(216, 612.5)
+shape = SubResource("RectangleShape2D_o6xl0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+position = Vector2(237.5, 325.5)
+scale = Vector2(0.45463, 0.763889)
+texture = ExtResource("7_choun")
+
+[node name="HUD" parent="." instance=ExtResource("6_tefeu")]
+process_mode = 3
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_o6xl0")
+autoplay = true
+
+[node name="AudioGloboRebentado" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_ya4ey")
+
+[node name="AudioTap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_eb6dy")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
+offset_right = 488.0
+offset_bottom = 807.0
+texture = ExtResource("9_85g3d")
+expand_mode = 4
+
+[node name="BirdLeftPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_tipki")
+
+[node name="BirdLeftLocation" type="PathFollow2D" parent="BirdLeftPath"]
+position = Vector2(0, 408)
+rotation = -1.5708
+
+[node name="BirdRightPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_85g3d")
+
+[node name="BirdRightLocation" type="PathFollow2D" parent="BirdRightPath"]
+position = Vector2(480, 0)
+rotation = 1.5708
+
+[connection signal="hit" from="Player" to="." method="game_over"]
+[connection signal="timeout" from="MeteoritoTimer" to="." method="_on_meteorito_timer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

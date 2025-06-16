@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmik40lmv7qgm"]
+
+[ext_resource type="Script" uid="uid://cs5vdabbr8beb" path="res://scripts/meteorito.gd" id="1_xhhfr"]
+[ext_resource type="Texture2D" uid="uid://skpronph3h25" path="res://assets/Meteorito/obstaculo_meteoro_1.png" id="2_pxcli"]
+[ext_resource type="Texture2D" uid="uid://cunuk1bkysfxu" path="res://assets/Meteorito/obstaculo_meteoro_2.png" id="3_oxkcv"]
+[ext_resource type="Texture2D" uid="uid://bcpeglxqm36yv" path="res://assets/Meteorito/obstaculo_meteoro_3.png" id="4_6yx06"]
+[ext_resource type="Texture2D" uid="uid://bu13l2ebw12ua" path="res://assets/Meteorito/obstaculo_meteoro_4.png" id="5_v0b6w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xplw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pxcli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oxkcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6yx06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v0b6w")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxcli"]
+radius = 10.198
+
+[node name="Meteorito" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_xhhfr")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_5xplw")
+animation = &"falling"
+autoplay = "falling"
+frame_progress = 0.019912
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 6)
+shape = SubResource("CircleShape2D_pxcli")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
