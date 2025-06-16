@@ -1,0 +1,71 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1749932310
+.gitignore.txt::TextFile/TextFile::-1::1749930946::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1749930947::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6726678204777944154::1749930947::1749931062::1::::<><><>0<>0<>50720509f3ecd58abe772ac1602f6ba4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile/TextFile::-1::1749486484::0::1::::<><><>0<>0<><>::
+::res://assets/::1749930946
+::res://assets/Audio/::1749931061
+Background_music.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::4597225913175485915::1749930946::1749931061::1::::<><><>0<>0<>dbc20c0c504a47bb295695f20c3cfe0b<>res://.godot/imported/Background_music.ogg-ea84a2b034d05ce452eaa977894a78cf.oggvorbisstr::
+::res://assets/Backgrounds/::1749931065
+BACKGROUND.png::CompressedTexture2D/CompressedTexture2D::7964401358913192317::1749930946::1749931065::1::::<><><>0<>0<>58757ce5c9cbc9ce40ceabae844b50b5<>res://.godot/imported/BACKGROUND.png-bd61a81d1fe15ef4098e8df3384a1310.ctex::
+floor.png::CompressedTexture2D/CompressedTexture2D::5698003592209504299::1749930946::1749931062::1::::<><><>0<>0<>879b1f3551e6d1019eff291ab3e67afd<>res://.godot/imported/floor.png-8c81b9261cb737990abd2ca22927598b.ctex::
+Suelo-02-02.png::CompressedTexture2D/CompressedTexture2D::3041251335408886221::1749930946::1749931062::1::::<><><>0<>0<>8405cc114e0f9fb93e6d9a81304e21a9<>res://.godot/imported/Suelo-02-02.png-0f95ab16b4ed4a5325a66aa3a7593dc3.ctex::
+::res://assets/Balloon/::1749931062
+globo_normal_desinflado.png::CompressedTexture2D/CompressedTexture2D::7770766185415973295::1749930946::1749931062::1::::<><><>0<>0<>93dfe65e651e7525dc63c8206dbd3ad5<>res://.godot/imported/globo_normal_desinflado.png-8aea3f29056d72eef3e58a7dbb1148b7.ctex::
+globo_normal_flotando.png::CompressedTexture2D/CompressedTexture2D::8677333096852656359::1749930946::1749931062::1::::<><><>0<>0<>72715209520016fcd91723625522183f<>res://.godot/imported/globo_normal_flotando.png-249c479880f23334e98e8ee1a57216a0.ctex::
+::res://assets/Bird/::1749931062
+1.png::CompressedTexture2D/CompressedTexture2D::6902982256593494736::1749930946::1749931062::1::::<><><>0<>0<>38a13c7983edaf344dd47700310738da<>res://.godot/imported/1.png-fa535540231739dfea7caa0154866a37.ctex::
+2.png::CompressedTexture2D/CompressedTexture2D::618115247978851985::1749930946::1749931062::1::::<><><>0<>0<>d980a515e6364428834657524c1e2faa<>res://.godot/imported/2.png-96dec8b9eaf429a550a73826cbe09816.ctex::
+3.png::CompressedTexture2D/CompressedTexture2D::2420480584778762318::1749930946::1749931062::1::::<><><>0<>0<>5da51d2664bfa042038fad31e5dc9307<>res://.godot/imported/3.png-761c5d7e6d26787744aa1388b8a4e3be.ctex::
+4.png::CompressedTexture2D/CompressedTexture2D::6281784628041164172::1749930946::1749931062::1::::<><><>0<>0<>7b8a0f6a2172568e4adbdebf41833d5e<>res://.godot/imported/4.png-ecda3ddb7e90a96a6b53d5d64730977d.ctex::
+5.png::CompressedTexture2D/CompressedTexture2D::9060219750321673137::1749930946::1749931062::1::::<><><>0<>0<>662fcbf245de2d37a302af7d2ba152a9<>res://.godot/imported/5.png-2d6f53db90f6f027df48d8be62331307.ctex::
+::res://assets/fonts/::1749931061
+Vipnagorgialla Bd It.otf::FontFile/FontFile::2924262338103269977::1749930946::1749931061::1::::<><><>0<>0<>1a36be5579a0dc28f4a5ed6745e58e7a<>res://.godot/imported/Vipnagorgialla Bd It.otf-008118973256fbe559ae44381ac5b7d3.fontdata::
+Vipnagorgialla Bd.otf::FontFile/FontFile::2286365047245154783::1749930946::1749931061::1::::<><><>0<>0<>f664d9bcd5d96d01d7d7a9c3e0b65b98<>res://.godot/imported/Vipnagorgialla Bd.otf-f4391f4e0f809af1bde2a8cd75047f84.fontdata::
+Vipnagorgialla Rg It.otf::FontFile/FontFile::7774077487234674202::1749930946::1749931061::1::::<><><>0<>0<>30e8820215b03d97d5009cded677f29b<>res://.godot/imported/Vipnagorgialla Rg It.otf-a2b75047271151c76b69f4867c9c0dde.fontdata::
+Vipnagorgialla Rg.otf::FontFile/FontFile::8566838275471980743::1749930946::1749931061::1::::<><><>0<>0<>ca1cf88c8500493561861c0342a37e8a<>res://.godot/imported/Vipnagorgialla Rg.otf-b8ac3bed0dd875793b90b0939e58259d.fontdata::
+::res://assets/Home Screen/::1749932310
+fondo_inicio2.png::CompressedTexture2D/CompressedTexture2D::3705919692578699915::1749930946::1749931062::1::::<><><>0<>0<>aaba60ec15b4e74e49d1bc61b3fc084d<>res://.godot/imported/fondo_inicio2.png-204fbe7f1058c8c9b764853841e091e1.ctex::
+fondo_inicio.png::CompressedTexture2D/CompressedTexture2D::8935035575259113314::1749930946::1749931063::1::::<><><>0<>0<>793c5fc82e15b527a17b782afa7fc2af<>res://.godot/imported/fondo_inicio.png-16b270b00b028ab7f4210a75ca95e3f5.ctex::
+fondo_presentacion.png::CompressedTexture2D/CompressedTexture2D::3345865030824937188::1749930946::1749931065::1::::<><><>0<>0<>511a17c1faa5ed37a24a01f282c2efd1<>res://.godot/imported/fondo_presentacion.png-f6be948e67645a201de3c230d219d07a.ctex::
+fondo_ready.png::CompressedTexture2D/CompressedTexture2D::6298021816604707477::1749930946::1749931063::1::::<><><>0<>0<>a5831478f150565e7f8c99ec78adaa4e<>res://.godot/imported/fondo_ready.png-6e14a0cd01fc1f5817e2419f19bac388.ctex::
+::res://assets/Home Screen/Audio/::1749932310
+globo_explosion.mp3::AudioStreamMP3::2228826238014388980::1749932052::1749932310::1::::<><><>0<>0<>187cdbfa812018611a5b58ac243c991e<>res://.godot/imported/globo_explosion.mp3-99f36e5ee8eba7e45e3f1446bbea234b.mp3str::
+globo_tap_1.mp3::AudioStreamMP3::5277818998312442716::1749932278::1749932310::1::::<><><>0<>0<>aa9d8654a6a4b572fae912e001da3857<>res://.godot/imported/globo_tap_1.mp3-d528a8358caec1cdb49940b141dae423.mp3str::
+globo_tap_2.mp3::AudioStreamMP3::286222627872469751::1749932278::1749932310::1::::<><><>0<>0<>163fd0b5ab958bb0846fb9039871fd25<>res://.godot/imported/globo_tap_2.mp3-6f0e315507a7606011b2ee302ef60cd9.mp3str::
+globo_tap_3.mp3::AudioStreamMP3::2836265266949951281::1749932278::1749932310::1::::<><><>0<>0<>f1b341ded567918829a2e32d7305f62e<>res://.godot/imported/globo_tap_3.mp3-13aed917259ba3ddfbc0fe31e7348719.mp3str::
+globo_tap_4.mp3::AudioStreamMP3::7240829750104653389::1749932278::1749932310::1::::<><><>0<>0<>e5fb9b6b67f7dd9a9b43653054727425<>res://.godot/imported/globo_tap_4.mp3-810dda3fc347f4672c804ee4245a1ba8.mp3str::
+::res://assets/Meteorito/::1749931062
+obstaculo_meteoro_1.png::CompressedTexture2D/CompressedTexture2D::1284984832514415552::1749930946::1749931062::1::::<><><>0<>0<>f636a8e0f7c6e55de5fed4d104b77f94<>res://.godot/imported/obstaculo_meteoro_1.png-ad1bf4d3364815e6e22db7426a90b5f1.ctex::
+obstaculo_meteoro_2.png::CompressedTexture2D/CompressedTexture2D::6204688716383053638::1749930946::1749931062::1::::<><><>0<>0<>e8366422d1c7f845269ba101a85f9931<>res://.godot/imported/obstaculo_meteoro_2.png-9e873d5525c8a389d6f70051ffdafd5d.ctex::
+obstaculo_meteoro_3.png::CompressedTexture2D/CompressedTexture2D::2558018234046050849::1749930946::1749931062::1::::<><><>0<>0<>b631d3e0548bea97aab36419b1b99819<>res://.godot/imported/obstaculo_meteoro_3.png-9394383bb364b7293e1716c7b4f6d248.ctex::
+obstaculo_meteoro_4.png::CompressedTexture2D/CompressedTexture2D::3845592521975277924::1749930946::1749931062::1::::<><><>0<>0<>cd757d39b4d4070247140672111d8188<>res://.godot/imported/obstaculo_meteoro_4.png-d0a2c9add0b39956ad2bc16309875ae7.ctex::
+::res://dist/::1749931062
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::2664913757635317229::1749930946::1749931062::1::::<><><>0<>0<>23302b79807fadf6b3aac450d9826e3d<>res://.godot/imported/index.apple-touch-icon.png-d1c4eb6d5d7c30b40e86e977a0ef11a4.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::5933519220816310025::1749930946::1749931062::1::::<><><>0<>0<>8766dcf3ece2301c07f9085c7367a045<>res://.godot/imported/index.icon.png-ebf4ad58b4a2cee8f808e86473c0799b.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::2579503735456686569::1749930946::1749931062::1::::<><><>0<>0<>224cb6c6fe23d2f3dd1e6e1a327f3ec4<>res://.godot/imported/index.png-7f66f612a88a5e604ffeac6d4ccded38.ctex::
+netlify.toml::TextFile/TextFile::-1::1749930946::0::1::::<><><>0<>0<><>::
+::res://dist2/::1749931062
+index.apple-touch-icon.png::CompressedTexture2D/CompressedTexture2D::4762015045123875012::1749930946::1749931062::1::::<><><>0<>0<>4f9055742aab183f0f3b1a94bd9181f0<>res://.godot/imported/index.apple-touch-icon.png-b0b7f0d0bf76f6c6a78328b512f435d6.ctex::
+index.icon.png::CompressedTexture2D/CompressedTexture2D::919562018983486100::1749930946::1749931062::1::::<><><>0<>0<>d98d8c4a6cf6d6eb6ca1df786f40438a<>res://.godot/imported/index.icon.png-25e55de9d24c59cd6595c7c8d0a1d490.ctex::
+index.png::CompressedTexture2D/CompressedTexture2D::3381867701391482452::1749930946::1749931062::1::::<><><>0<>0<>6a9b3a98f91f20be3061fd9c1382c140<>res://.godot/imported/index.png-08d6415eb0b37cd8ed9baa782842b210.ctex::
+netlify.toml::TextFile/TextFile::-1::1749930947::0::1::::<><><>0<>0<><>::
+::res://do-not-touch-the-ground-dev/::1749930947
+.gitignore.txt::TextFile/TextFile::-1::1749930947::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1749930947::0::1::::<><><>0<>0<><>::
+::res://dont-touch-the-ground/::1749930946
+::res://scenes/::1749931080
+bird.tscn::PackedScene/PackedScene::1707939570746717851::1749930947::0::1::::<><><>0<>0<><>::uid://1jmvu0166dp3::::res://scripts/bird.gd<>uid://c5l4dyjc83gyy::::res://assets/Bird/1.png<>uid://i2ojduwebbph::::res://assets/Bird/2.png<>uid://baqq7xurtoah7::::res://assets/Bird/3.png<>uid://cvq7cs0rqufo3::::res://assets/Bird/4.png<>uid://d2c3q35ahdyf6::::res://assets/Bird/5.png
+hud.tscn::PackedScene/PackedScene::3065144759275107912::1749930947::0::1::::<><><>0<>0<><>::uid://crudwc118vnl8::::res://scripts/hud.gd<>uid://bhwsf5sagh0ob::::res://assets/fonts/Vipnagorgialla Bd It.otf
+main.tscn::PackedScene/PackedScene::8768303987664279306::1749931080::0::1::::<><><>0<>0<><>::uid://c4imfugleu4s4::::res://scenes/player.tscn<>uid://ct4tfsks4qm55::::res://scripts/main.gd<>uid://dmik40lmv7qgm::::res://scenes/meteorito.tscn<>uid://yllrrtko40wd::::res://scenes/bird.tscn<>uid://2um1u2p4pdtu::::res://scenes/Tcollaboration.tscn<>uid://bfc7clxxdcov2::::res://scripts/floor.gd<>uid://bjw1qsh8caqh1::::res://scenes/hud.tscn<>uid://bjlg72yyp1dht::::res://assets/Backgrounds/Suelo-02-02.png<>uid://b6q6vy3ijfxu6::::res://assets/Audio/Background_music.ogg<>uid://dlqar57cv0166::::res://assets/Backgrounds/BACKGROUND.png
+meteorito.tscn::PackedScene/PackedScene::8018703485370243368::1749930947::0::1::::<><><>0<>0<><>::uid://cs5vdabbr8beb::::res://scripts/meteorito.gd<>uid://skpronph3h25::::res://assets/Meteorito/obstaculo_meteoro_1.png<>uid://cunuk1bkysfxu::::res://assets/Meteorito/obstaculo_meteoro_2.png<>uid://bcpeglxqm36yv::::res://assets/Meteorito/obstaculo_meteoro_3.png<>uid://bu13l2ebw12ua::::res://assets/Meteorito/obstaculo_meteoro_4.png
+player.tscn::PackedScene/PackedScene::6825571448046126133::1749930947::0::1::::<><><>0<>0<><>::uid://hlawbitxjpo::::res://scripts/player.gd<>uid://dvvmn5bblalbj::::res://assets/Balloon/globo_normal_flotando.png<>uid://diyhnbu62vd4r::::res://assets/Balloon/globo_normal_desinflado.png
+Tcollaboration.tscn::PackedScene/PackedScene::1937162460760395662::1749931080::0::1::::<><><>0<>0<><>::uid://bnw0545yabnmq::::res://assets/Home Screen/fondo_presentacion.png<>uid://bs2f7rarco5v0::::res://assets/Home Screen/fondo_inicio2.png
+::res://scripts/::1749930947
+bird.gd::GDScript/GDScript::1844256530271663502::1749930947::0::1::::<>RigidBody2D<><>0<>0<><>::
+floor.gd::GDScript/GDScript::2743440787084191613::1749930947::0::1::::<>StaticBody2D<><>0<>0<><>::
+hud.gd::GDScript/GDScript::6007560849196031299::1749930947::0::1::::<>CanvasLayer<><>0<>0<><>::
+main.gd::GDScript/GDScript::6167459864934220122::1749930947::0::1::::<>Node<><>0<>0<><>::
+meteorito.gd::GDScript/GDScript::6099452301336644613::1749930947::0::1::::<>RigidBody2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::15119688647145816::1749930947::0::1::::<>Area2D<><>0<>0<><>::
