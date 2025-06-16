@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://2um1u2p4pdtu"]
+
+[ext_resource type="Texture2D" uid="uid://bnw0545yabnmq" path="res://assets/Home Screen/fondo_presentacion.png" id="1_1darp"]
+[ext_resource type="Texture2D" uid="uid://bs2f7rarco5v0" path="res://assets/Home Screen/fondo_inicio2.png" id="1_buqk7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_au6og"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_buqk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_1darp")
+}],
+"loop": true,
+"name": &"Presentacion",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(243, 357)
+scale = Vector2(0.841187, 0.573438)
+sprite_frames = SubResource("SpriteFrames_au6og")
+animation = &"Presentacion"
+autoplay = "Presentacion"
+frame_progress = 0.476626

@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4imfugleu4s4"]
+
+[ext_resource type="Script" uid="uid://hlawbitxjpo" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dvvmn5bblalbj" path="res://assets/Balloon/globo_normal_flotando.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://diyhnbu62vd4r" path="res://assets/Balloon/globo_normal_desinflado.png" id="2_qhqgy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pqap4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qhqgy")
+}],
+"loop": true,
+"name": &"Die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g2els")
+}],
+"loop": true,
+"name": &"floating",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2c7ny"]
+radius = 35.4527
+height = 99.3883
+
+[node name="Player" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_g2els")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.06, 0.06)
+sprite_frames = SubResource("SpriteFrames_pqap4")
+animation = &"floating"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13, -14)
+rotation = 0.226893
+shape = SubResource("CapsuleShape2D_2c7ny")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

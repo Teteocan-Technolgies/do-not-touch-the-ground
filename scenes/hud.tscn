@@ -1,0 +1,120 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjw1qsh8caqh1"]
+
+[ext_resource type="Script" uid="uid://crudwc118vnl8" path="res://scripts/hud.gd" id="1_rlpwx"]
+[ext_resource type="FontFile" uid="uid://bhwsf5sagh0ob" path="res://assets/fonts/Vipnagorgialla Bd It.otf" id="1_yw0i7"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_rlpwx")
+
+[node name="StartScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TitleLabel" type="Label" parent="StartScreen"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 110.0
+offset_right = 444.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+theme_override_font_sizes/font_size = 45
+text = "DONT TOUCH 
+THE GROUND!!"
+
+[node name="StartButton" type="Button" parent="StartScreen"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 502.0
+offset_right = 355.0
+offset_bottom = 547.0
+theme_override_colors/font_disabled_color = Color(0.602493, 0.473622, 0.24363, 1)
+theme_override_fonts/font = ExtResource("1_yw0i7")
+theme_override_font_sizes/font_size = 30
+text = "Start Game
+"
+
+[node name="GameOverScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameOver" type="Label" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 261.0
+offset_right = 327.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+theme_override_font_sizes/font_size = 30
+text = "GAME OVER"
+
+[node name="FinalScore" type="Label" parent="GameOverScreen"]
+offset_left = 126.0
+offset_top = 312.0
+offset_right = 309.0
+offset_bottom = 335.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Puntuacion Final"
+
+[node name="FinalTime" type="Label" parent="GameOverScreen"]
+offset_left = 126.0
+offset_top = 336.0
+offset_right = 309.0
+offset_bottom = 359.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Tiempo Final"
+
+[node name="MaxPuntaje" type="Label" parent="GameOverScreen"]
+offset_left = 126.0
+offset_top = 360.0
+offset_right = 342.0
+offset_bottom = 383.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Puntuacion máxima"
+
+[node name="MaxtimePassed" type="Label" parent="GameOverScreen"]
+offset_left = 126.0
+offset_top = 384.0
+offset_right = 342.0
+offset_bottom = 407.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Tiempo máxima"
+
+[node name="Retry" type="Button" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 432.0
+offset_right = 258.0
+offset_bottom = 484.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "RETRY"
+
+[node name="GameUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tiempo" type="Label" parent="GameUI"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 112.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Tiempo: 0"
+
+[node name="Puntuacion" type="Label" parent="GameUI"]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 2.0
+offset_right = 472.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("1_yw0i7")
+text = "Puntuacion:0"
+
+[connection signal="pressed" from="StartScreen/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="GameOverScreen/Retry" to="." method="_on_retry_pressed"]
