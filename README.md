@@ -1,10 +1,10 @@
-# Balloon Game 🎈
+# Do not touch the ground 🎈
 
 Un juego 2D desarrollado en Godot donde controlas un globo que debe evitar meteoritos y pájaros mientras intenta mantenerse en el aire el mayor tiempo posible.
 
 ## 📋 Descripción del Juego
 
-**Balloon Game** es un juego de supervivencia donde el jugador controla un globo que debe esquivar obstáculos que caen del cielo y vuelan desde los lados. El objetivo es sobrevivir el mayor tiempo posible y obtener la puntuación más alta.
+**Do not touch the ground** es un juego de supervivencia donde el jugador controla un globo que debe esquivar obstáculos que caen del cielo y vuelan desde los lados. El objetivo es sobrevivir el mayor tiempo posible y obtener la puntuación más alta.
 
 ### Características Principales:
 - **Controles simples**: Un solo botón para hacer flotar el globo
